@@ -1,0 +1,76 @@
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f4ff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bar-chart {
+  width: 80%;
+  background-color: #e0e4ff;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.arrow-button {
+  display: flex;
+  align-items: center;
+}
+
+.next-button {
+  background-color: #000;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #333;
+}
+
+/* Pie Chart  */
+.pie-chart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f4ff;
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  gap: 40px;
+}
+
+.custom-legend {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.legend-label {
+  font-size: 14px;
+  color: #333;
+}

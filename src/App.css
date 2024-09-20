@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+/* Main App */
+.header {
+    padding-top: 12px;
+    background: #fff;
+    align-items: center;
+}
+.content {
+    margin: 24px 16px;
+    padding: 20px;
+}
+.trigger-btn {
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Sider */
+.sider {
+    height: 100vh;
+    position: sticky !important;
+    left: 0;
+    bottom: 0;
+    top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+    color: #FCB316;
+    margin: 40px 0;
+    font-size: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.ant-menu-item-selected {
+    background-color: #000000 !important;
+    color: #fff !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Header */
+.header-icon, .banner-icon{
+    font-size: 30px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.banner-icon {
+    border-radius: 5px;
+    background: #fff;
+}
+
+.dropdown {
+    width: 100px;
+}
+
+/* Button and Color */
+.ant-btn:hover {
+    color: #FCB316 !important;
+    border-color: #FCB316 !important;
+}
+
+/* MainContent */
+
+
+/* Event Content */
+.total {
+    font-size: 50px;
 }
