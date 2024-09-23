@@ -4,29 +4,29 @@ import React from 'react'
 import Data from '../Data/Data';
 import { useNavigate } from 'react-router-dom';
 
-function EventContent({Eventname}) {
+function ClassContent({Eventname}) {
 
   const navigate = useNavigate();
 
   const handEventleListAttendees = () => {
-    navigate('/event_attendees');
+    navigate('/class_attendees');
   }
 
   return (
       <Card style={{ height: 520, width: '50%' }}>
       <Typography.Title level={4}>{Eventname}</Typography.Title>
       <div style={{ maxHeight: 400, overflowX: 'auto', paddingRight: 16 }}>
-        {Data.map((event, index) => (
+        {Data.map((department, index) => (
           <Card key={index} style={{ marginBottom: 16, cursor: 'pointer'}}
           onClick={handEventleListAttendees}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <Typography.Title level={4}>{event.eventTittle}</Typography.Title>
+              <Typography.Title level={4}>{department.eventTittle}</Typography.Title>
               <FcAdvance className='header-icon' />
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <Typography.Paragraph>Total Attendees</Typography.Paragraph>
-              <h1 className='total'>{event.totalAttendees}</h1>
+              <h1 className='total'>{department.totalAttendees}</h1>
             </div>
           </Card>
         ))}
@@ -36,4 +36,4 @@ function EventContent({Eventname}) {
   )
 }
 
-export default EventContent
+export default ClassContent

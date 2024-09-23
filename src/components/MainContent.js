@@ -3,6 +3,7 @@ import React from 'react'
 import Banner from './Banner'
 import EventContent from './EventContent'
 import Graphs from './Graphs'
+import ClassContent from './ClassContent'
 
 function MainContent() {
   return (
@@ -11,7 +12,7 @@ function MainContent() {
         <Banner/>
         <Flex gap='2.5rem'>
             <EventContent Eventname= 'Event'/>
-            <EventContent Eventname= 'Class'/>
+            <ClassContent Eventname= 'Class'/>
         </Flex>
         <hr />
         <Graphs/>

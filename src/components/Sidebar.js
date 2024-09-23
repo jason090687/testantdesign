@@ -1,4 +1,4 @@
-import { Flex, Menu } from 'antd'
+import { Divider, Flex, Menu } from 'antd'
 import { HomeOutlined, FileOutlined, CheckCircleOutlined, LineChartOutlined, CommentOutlined, TeamOutlined } from '@ant-design/icons';
 import { CgEventbrite } from "react-icons/cg";
 import React from 'react'
@@ -23,6 +23,7 @@ function Sidebar() {
         <Menu.Item key='3' icon={<CheckCircleOutlined />}>
           <Link to='/class-attendance'>Class Attendance</Link>
         </Menu.Item>
+        <Divider/>
         <Menu.Item key='4' icon={<LineChartOutlined />}>
           <Link to='/analytics'>Analytics</Link>
         </Menu.Item>

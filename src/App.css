@@ -73,3 +73,14 @@
 .total {
     font-size: 50px;
 }
+
+
+/* Event Attendance  */
+.buttons {
+    width: 220px;
+    height: 70px;
+    background: #000000;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 20px;
+}
